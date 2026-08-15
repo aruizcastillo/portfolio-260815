@@ -17,11 +17,11 @@ const themeIcon = computed(() => themeIcons[theme.value])
 </script>
 
 <template>
-  <DropdownMenu :key="locale" :modal="false" :aria-label="t('common.language')">
+  <DropdownMenu :key="locale" :modal="false" :aria-label="t('common.theme')">
     <DropdownMenuTrigger>
       <Button type="button" variant="ghost" class="flex items-center gap-2">
         <component :is="themeIcon" aria-hidden="true" />
-        <span class="hidden md:block">{{ t(`theme.${theme}`) }}</span>
+        <span>{{ t(`theme.${theme}`) }}</span>
       </Button>
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end">

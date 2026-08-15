@@ -5,10 +5,10 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 <template>
   <Card>
     <CardHeader>
-      <CardTitle>About</CardTitle>
+      <CardTitle>{{ $t('home.sections.about') }}</CardTitle>
     </CardHeader>
     <CardContent>
-      <p class="text-muted-foreground">Soy desarrollador web con experiencia profesional en proyectos ágiles. Mi objetivo es diseñar software con impacto real y seguir creciendo como profesional.</p>
+      <p class="text-muted-foreground">{{ $t('home.about') }}</p>
     </CardContent>
   </Card>
 </template>

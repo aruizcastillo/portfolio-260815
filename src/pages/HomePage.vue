@@ -11,11 +11,11 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 </script>
 
 <template>
-  <PageContainer size="wide">
+  <PageContainer size="full">
     <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.2fr_0.9fr_0.9fr] xl:auto-rows-24">
       <AppHeader class="xl:col-start-1 xl:row-start-1 xl:row-span-1" />
 
-      <HeroSection class="xl:col-start-1 xl:row-start-2 xl:row-span-5" />
+      <HeroSection class="xl:col-start-1 xl:row-start-2 xl:row-span-3" />
 
       <AboutSection class="xl:col-start-3 xl:row-start-1 xl:row-span-2" />
 

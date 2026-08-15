@@ -20,10 +20,22 @@
     "home": "Inicio",
     "backToHome": "Volver a la página de inicio"
   },
-  "buttons": {},
-  "home": {
-    "description": "Desarrollo aplicaciones web modernas y escalables",
-    "about": "Soy desarrollador web con experiencia profesional en proyectos ágiles dentro de sectores como la administración pública y el ámbito hospitalario. Mi objetivo es diseñar software con impacto real y seguir creciendo como profesional."
+  "buttons": {
+    "contactMe": "Contactar",
+    "resume": "Currículum",
+    "copyEmail": "Copiar correo"
   },
+  "home": {
+    "description": "Diseño y desarrollo aplicaciones web modernas y escalables.",
+    "about": "Soy desarrollador web con experiencia profesional en proyectos ágiles. Mi objetivo es diseñar software con impacto real y seguir creciendo como profesional.",
+    "sections": {
+      "about": "Sobre mí",
+      "experience": "Experiencia",
+      "education": "Educación",
+      "projects": "Proyectos"
+    },
+    "placeholder": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+  },
+  "contact": { "emailCopied": "Correo copiado al portapapeles" },
   "notFound": { "title": "Página no encontrada" }
 }
