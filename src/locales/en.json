@@ -1,0 +1,28 @@
+{
+  "app": { "name": "Alex Ruiz Castillo" },
+  "metadata": {
+    "default": { "title": "Alex Ruiz Castillo", "description": "Personal portfolio of Alex Ruiz Castillo, featuring selected projects, experience and work." },
+    "home": { "title": "Alex Ruiz Castillo", "description": "Personal portfolio of Alex Ruiz Castillo, featuring selected projects, experience and work." },
+    "notFound": { "title": "Page not found · Alex Ruiz Castillo", "description": "The page you requested could not be found." }
+  },
+  "languages": { "en": "English", "es": "Spanish" },
+  "common": {
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "theme": {
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "navigation": {
+    "main": "Main navigation",
+    "home": "Home",
+    "backToHome": "Back to home"
+  },
+  "buttons": {},
+  "home": {
+    "description": "A minimal starter template for building Vue SPAs."
+  },
+  "notFound": { "title": "Page not found" }
+}

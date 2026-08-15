@@ -1,0 +1,28 @@
+{
+  "app": { "name": "Alex Ruiz Castillo" },
+  "languages": { "en": "Inglés", "es": "Español" },
+  "metadata": {
+    "default": { "title": "Alex Ruiz Castillo", "description": "Portafolio personal de Alex Ruiz Castillo, destacando proyectos seleccionados, experiencia y trabajo." },
+    "home": { "title": "Alex Ruiz Castillo", "description": "Portafolio personal de Alex Ruiz Castillo, destacando proyectos seleccionados, experiencia y trabajo." },
+    "notFound": { "title": "Página no encontrada · Alex Ruiz Castillo", "description": "No se ha encontrado la página solicitada." }
+  },
+  "common": {
+    "language": "Idioma",
+    "theme": "Tema"
+  },
+  "theme": {
+    "system": "Sistema",
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "navigation": {
+    "main": "Navegación principal",
+    "home": "Inicio",
+    "backToHome": "Volver a la página de inicio"
+  },
+  "buttons": {},
+  "home": {
+    "description": "Una plantilla minimalista para construir SPAs con Vue."
+  },
+  "notFound": { "title": "Página no encontrada" }
+}
