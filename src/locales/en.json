@@ -23,7 +23,7 @@
   "buttons": {},
   "home": {
     "description": "I build modern web applications that scale",
-    "about" : "Web developer with professional experience in agile projects across sectors such as public administration and healthcare. My goal is to build software with real impact while continuing to grow as a professional."
+    "about": "Web developer with professional experience in agile projects across sectors such as public administration and healthcare. My goal is to build software with real impact while continuing to grow as a professional."
   },
   "notFound": { "title": "Page not found" }
 }

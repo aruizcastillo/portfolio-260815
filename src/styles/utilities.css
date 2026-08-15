@@ -20,3 +20,8 @@
 @utility gap-xl {
   @apply gap-8;
 }
+
+/* Ghost */
+@utility ghost {
+  @apply bg-transparent! border-transparent! shadow-none!;
+}
