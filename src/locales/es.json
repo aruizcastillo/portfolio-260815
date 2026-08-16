@@ -1,11 +1,12 @@
 {
   "app": { "name": "Alex Ruiz Castillo" },
-  "languages": { "en": "Inglés", "es": "Español" },
   "metadata": {
     "default": { "title": "Alex Ruiz Castillo", "description": "Portafolio personal de Alex Ruiz Castillo, destacando proyectos seleccionados, experiencia y trabajo." },
     "home": { "title": "Alex Ruiz Castillo", "description": "Portafolio personal de Alex Ruiz Castillo, destacando proyectos seleccionados, experiencia y trabajo." },
     "notFound": { "title": "Página no encontrada · Alex Ruiz Castillo", "description": "No se ha encontrado la página solicitada." }
   },
+  "languages": { "en": "Inglés", "es": "Español" },
+  "cvPath": "/assets/alex_ruiz_cv_es.pdf",
   "common": {
     "language": "Idioma",
     "theme": "Tema"
@@ -21,13 +22,15 @@
     "backToHome": "Volver a la página de inicio"
   },
   "buttons": {
-    "contactMe": "Contactar",
+    "contactMe": "Contacto",
     "resume": "Currículum",
-    "copyEmail": "Copiar correo"
+    "copyEmail": "Copiar correo",
+    "viewRepository": "Ver repositorio",
+    "viewOnGithub": "Ver en GitHub"
   },
   "home": {
     "description": "Diseño y desarrollo aplicaciones web modernas y escalables.",
-    "about": "Soy desarrollador web con experiencia profesional en proyectos ágiles. Mi objetivo es diseñar software con impacto real y seguir creciendo como profesional.",
+    "about": "Desarrollador web con experiencia profesional en proyectos ágiles, enfocado en crear software útil, intuitivo y mantenible.",
     "sections": {
       "about": "Sobre mí",
       "experience": "Experiencia",
@@ -36,6 +39,44 @@
     },
     "placeholder": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
   },
+  "experience": [
+    {
+      "company": "DXC Technology",
+      "role": "Desarrollador Full-Stack",
+      "duration": "Oct 2025 - Jun 2026",
+      "description": "Desarrollo y mantenimiento de sistemas web para la gestión de contratación pública, implementando flujos de licitación como parte de un equipo amplio en entornos ágiles.",
+      "stack": ["Angular", "Spring", "PostgreSQL"]
+    },
+    {
+      "company": "Corporació de Salut del Maresme i la Selva",
+      "role": "Desarrollador Frontend",
+      "duration": "Jul 2026 - Presente",
+      "description": "Desarrollo y mantenimiento de aplicaciones web internas de ámbito administrativo y hospitalario, trabajando en UX/UI, integración de APIs, acceso a datos y soporte de aplicaciones.",
+      "stack": ["Vue", "Quasar", "Go", "SQL Server"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Institut Sa Palomera",
+      "degree": "Formación Profesional de Grado Superior en Desarrollo de Aplicaciones Web",
+      "duration": "Sep 2024 - Jun 2026",
+      "stack": ["Java", "Typescript", "MySQL", "PHP"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MD-Juice",
+      "description": "Un paquete CSS basado en tokens para personalizar renderizado Markdown, publicado en npm.",
+      "link": "https://github.com/aruizcastillo/md-juice",
+      "stack": ["CSS", "Markdown", "npm"]
+    },
+    {
+      "name": "Vue Firebase Starter",
+      "description": "Un starter opinionado para Vue con autenticación, Firestore, routing, i18n y shadcn-vue.",
+      "link": "https://github.com/aruizcastillo/vue-firebase-starter",
+      "stack": ["Vue", "Firebase", "Auth", "Firestore"]
+    }
+  ],
   "contact": { "emailCopied": "Correo copiado al portapapeles" },
   "notFound": { "title": "Página no encontrada" }
 }

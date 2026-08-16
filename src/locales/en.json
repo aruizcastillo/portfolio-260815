@@ -6,6 +6,7 @@
     "notFound": { "title": "Page not found · Alex Ruiz Castillo", "description": "The page you requested could not be found." }
   },
   "languages": { "en": "English", "es": "Spanish" },
+  "cvPath": "/assets/alex_ruiz_cv_en.pdf",
   "common": {
     "language": "Language",
     "theme": "Theme"
@@ -23,11 +24,13 @@
   "buttons": {
     "contactMe": "Contact me",
     "resume": "Resume",
-    "copyEmail": "Copy email"
+    "copyEmail": "Copy email",
+    "viewRepository": "View repository",
+    "viewOnGithub": "View on GitHub"
   },
   "home": {
     "description": "I design and build modern web applications that scale.",
-    "about": "Web developer with professional experience in agile projects. My goal is to build software with real impact while continuing to grow as a professional.",
+    "about": "Web developer with professional experience in agile projects, focused on building useful, intuitive, and maintainable software.",
     "sections": {
       "about": "About me",
       "experience": "Experience",
@@ -37,5 +40,44 @@
     "placeholder": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
   },
   "contact": { "emailCopied": "Email copied to clipboard" },
+  "experience": [
+    {
+      "company": "DXC Technology",
+      "role": "Full-Stack Developer",
+      "duration": "Oct 2025 - Jun 2026",
+      "description": "Development and maintenance of web systems for public procurement, implementing tendering workflows, service integrations and business-heavy forms as part of a large agile team.",
+      "stack": ["Angular", "Spring", "PostgreSQL"]
+    },
+    {
+      "company": "Corporació de Salut del Maresme i la Selva",
+      "role": "Frontend Developer",
+      "duration": "Jul 2026 - Present",
+      "description": "Development and maintenance of internal web applications for administrative and healthcare environments, from UX/UI and API integration to data access and application support.",
+      "stack": ["Vue", "Quasar", "Go", "SQL Server"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Institut Sa Palomera",
+      "degree": "Higher Vocational Training in Web Application Development.",
+      "duration": "Sep 2024 - Jun 2026",
+      "stack": ["Java", "TypeScript", "MySQL", "PHP"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "MD-Juice",
+      "description": "A token-based CSS package for customizable Markdown rendering, published on npm.",
+      "repoUrl": "https://github.com/aruizcastillo/md-juice",
+      "stack": ["CSS", "Markdown", "npm"]
+    },
+    {
+      "name": "Vue Firebase Starter",
+      "description": "An opinionated Vue starter with authentication, Firestore, routing, i18n, and shadcn-vue.",
+      "repoUrl": "https://github.com/aruizcastillo/vue-firebase-starter",
+      "websiteUrl": "https://vue-firebase-starter.vercel.app",
+      "stack": ["Vue", "TypeScript", "Firebase", "Firestore"]
+    }
+  ],
   "notFound": { "title": "Page not found" }
 }

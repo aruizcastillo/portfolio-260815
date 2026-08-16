@@ -11,18 +11,18 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 
 <template>
   <PageContainer size="full">
-    <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.2fr_0.9fr_0.9fr] xl:auto-rows-22">
-      <HeroSection class="xl:col-start-1 xl:row-start-1 xl:row-span-4" />
+    <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.2fr_0.9fr_0.9fr] xl:auto-rows-2.5">
+      <HeroSection class="xl:col-start-1 xl:row-start-1 xl:row-span-16" />
 
-      <AboutSection class="xl:col-start-3 xl:row-start-1 xl:row-span-2" />
+      <AboutSection class="xl:col-start-2 xl:row-start-1 xl:row-span-6" />
 
-      <ExperienceSection class="xl:col-start-2 xl:row-start-1 xl:row-span-4" />
+      <ExperienceSection class="xl:col-start-2 xl:row-start-7 xl:row-span-18" />
 
-      <EducationSection class="xl:col-start-2 xl:row-start-5 xl:row-span-2" />
+      <EducationSection class="xl:col-start-3 xl:row-start-17 xl:row-span-8" />
 
-      <ProjectsSection class="xl:col-start-3 xl:row-start-3 xl:row-span-4" />
+      <ProjectsSection class="xl:col-start-3 xl:row-start-1 xl:row-span-16" />
 
-      <ContactSection class="xl:col-start-1 xl:row-start-5 xl:row-span-2" />
+      <ContactSection class="xl:col-start-1 xl:row-start-17 xl:row-span-8" />
     </div>
   </PageContainer>
 </template>

@@ -2,6 +2,8 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
+import { Send, FileText } from '@lucide/vue'
+
 import * as info from '@/data/info.json'
 </script>
 
@@ -13,10 +15,16 @@ import * as info from '@/data/info.json'
     </CardHeader>
     <CardContent class="flex flex-row gap-2">
       <Button asChild>
-        <a :href="`mailto:${info.email}`">{{ $t('buttons.contactMe') }}</a>
+        <a :href="`mailto:${info.email}`">
+          <Send data-icon="inline-start" />
+          {{ $t('buttons.contactMe') }}
+        </a>
       </Button>
       <Button asChild variant="secondary">
-        <a href="/files/resume.pdf" target="_blank">{{ $t('buttons.resume') }}</a>
+        <a :href="$t('cvPath')" target="_blank">
+          <FileText data-icon="inline-start" />
+          {{ $t('buttons.resume') }}
+        </a>
       </Button>
     </CardContent>
   </Card>

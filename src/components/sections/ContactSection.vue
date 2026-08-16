@@ -52,14 +52,14 @@ async function copyEmail() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger as-child>
-                <Button variant="ghost" size="sm" :aria-label="t('buttons.copyEmail')" @click="copyEmail">
+                <Button variant="ghost" size="sm" class="text-muted-foreground" :aria-label="t('buttons.copyEmail')" @click="copyEmail">
                   <Transition mode="out-in" enter-active-class="transition duration-100 ease-out" enter-from-class="scale-75 opacity-0" enter-to-class="scale-100 opacity-100" leave-active-class="transition duration-100 ease-in" leave-from-class="scale-100 opacity-100" leave-to-class="scale-75 opacity-0">
                     <Check v-if="emailCopied" data-icon="inline-start" />
                     <Copy v-else data-icon="inline-start" />
                   </Transition>
                 </Button>
               </TooltipTrigger>
-              <TooltipContent side="bottom">
+              <TooltipContent>
                 <p>{{ t('buttons.copyEmail') }}</p>
               </TooltipContent>
             </Tooltip>
