@@ -10,7 +10,7 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 </script>
 
 <template>
-  <PageContainer size="full">
+  <PageContainer size="wider">
     <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.2fr_0.9fr_0.9fr] xl:auto-rows-2.5">
       <HeroSection class="xl:col-start-1 xl:row-start-1 xl:row-span-16" />
 

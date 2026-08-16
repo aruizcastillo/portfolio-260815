@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-type PageSize = 'sm' | 'md' | 'lg' | 'xl' | 'narrow' | 'default' | 'wide' | 'full'
+type PageSize = 'sm' | 'md' | 'lg' | 'xl' | 'narrow' | 'default' | 'wide' | 'wider' | 'full'
 
 type PageGap = 'none' | 'sm' | 'md' | 'lg' | 'xl'
 
@@ -12,7 +12,8 @@ const sizeClasses: Record<PageSize, string> = {
   xl: 'max-w-7xl',
   narrow: 'max-w-xl',
   default: 'max-w-5xl',
-  wide: 'max-w-7xl',
+  wide: 'max-w-8xl',
+  wider: 'max-w-screen-2xl',
   full: 'max-w-none',
 }
 
@@ -42,7 +43,7 @@ const gapClass = computed(() => gapClasses[props.gap])
 </script>
 
 <template>
-  <div :class="['mx-auto flex w-full flex-1 flex-col px-4 pb-8 md:px-6 lg:px-8', sizeClass, gapClass, centered && 'items-center justify-center']">
+  <div :class="['mx-auto flex w-full flex-1 flex-col px-4 pb-6 md:px-6 lg:px-8', sizeClass, gapClass, centered && 'items-center justify-center']">
     <slot />
   </div>
 </template>
