@@ -51,7 +51,7 @@
       "company": "Corporació de Salut del Maresme i la Selva",
       "role": "Desarrollador Frontend",
       "duration": "Jul 2026 - Presente",
-      "description": "Desarrollo y mantenimiento de aplicaciones web internas de ámbito administrativo y hospitalario, trabajando en UX/UI, integración de APIs, acceso a datos y soporte de aplicaciones.",
+      "description": "Desarrollo y mantenimiento de aplicaciones web internas de ámbito administrativo y hospitalario con Vue, Quasar, Go y SQL Server, desde UX/Ul e integración de APls hasta acceso a datos y soporte de aplicaciones.",
       "stack": ["Vue", "Quasar", "Go", "SQL Server"]
     }
   ],
