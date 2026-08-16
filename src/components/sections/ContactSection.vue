@@ -6,6 +6,7 @@ import { Copy, Check, Mail } from '@lucide/vue'
 import { toast } from 'vue-sonner'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 
 import GitHubIcon from '~icons/simple-icons/github'
 import LinkedInIcon from '~icons/simple-icons/linkedin'
@@ -48,12 +49,21 @@ async function copyEmail() {
               {{ info.email }}
             </a>
           </Button>
-          <Button variant="ghost" size="sm" :aria-label="t('buttons.copyEmail')" @click="copyEmail">
-            <Transition mode="out-in" enter-active-class="transition duration-100 ease-out" enter-from-class="scale-75 opacity-0" enter-to-class="scale-100 opacity-100" leave-active-class="transition duration-100 ease-in" leave-from-class="scale-100 opacity-100" leave-to-class="scale-75 opacity-0">
-              <Check v-if="emailCopied" data-icon="inline-start" />
-              <Copy v-else data-icon="inline-start" />
-            </Transition>
-          </Button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger as-child>
+                <Button variant="ghost" size="sm" :aria-label="t('buttons.copyEmail')" @click="copyEmail">
+                  <Transition mode="out-in" enter-active-class="transition duration-100 ease-out" enter-from-class="scale-75 opacity-0" enter-to-class="scale-100 opacity-100" leave-active-class="transition duration-100 ease-in" leave-from-class="scale-100 opacity-100" leave-to-class="scale-75 opacity-0">
+                    <Check v-if="emailCopied" data-icon="inline-start" />
+                    <Copy v-else data-icon="inline-start" />
+                  </Transition>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent side="bottom">
+                <p>{{ t('buttons.copyEmail') }}</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </div>
     </CardContent>

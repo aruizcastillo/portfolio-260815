@@ -42,7 +42,7 @@ const gapClass = computed(() => gapClasses[props.gap])
 </script>
 
 <template>
-  <div :class="['mx-auto flex w-full flex-1 flex-col px-4 py-8 md:px-6 lg:px-8', sizeClass, gapClass, centered && 'items-center justify-center']">
+  <div :class="['mx-auto flex w-full flex-1 flex-col px-4 pb-8 md:px-6 lg:px-8', sizeClass, gapClass, centered && 'items-center justify-center']">
     <slot />
   </div>
 </template>
