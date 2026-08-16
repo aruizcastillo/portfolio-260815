@@ -12,6 +12,8 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 
 import { ArrowUpRight, CodeXml } from '@lucide/vue'
 
+import * as info from '@/data/info.json'
+
 interface Projects {
   name: string
   description: string
@@ -64,7 +66,7 @@ const projects = computed(() => [...(tm('projects') as Projects[])].reverse())
         </template>
       </ScrollArea>
       <Button asChild variant="link" class="text-muted-foreground my-2">
-        <a href="x.com" target="_blank" rel="noopener noreferrer">
+        <a :href="`${info.github.url}?tab=repositories`" target="_blank" rel="noopener noreferrer">
           {{ $t('buttons.viewOnGithub') }}
           <ArrowUpRight data-icon="inline-end" />
         </a>
