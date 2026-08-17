@@ -15,8 +15,9 @@ import { ArrowUpRight, CodeXml } from '@lucide/vue'
 interface Projects {
   name: string
   description: string
-  link: string
-  stack: string[]
+  repoUrl: string
+  websiteUrl?: string
+  stack?: string[]
 }
 const { tm } = useI18n()
 const projects = computed(() => [...(tm('projects') as Projects[])].reverse())
@@ -34,13 +35,21 @@ const projects = computed(() => [...(tm('projects') as Projects[])].reverse())
           <Separator v-if="index > 0" class="my-4" />
           <Item size="sm" class="p-0">
             <ItemHeader>
-              <ItemTitle>{{ project.name }}</ItemTitle>
+              <ItemTitle>
+                <Button asChild variant="link" class="flex items-center gap-2 px-0!">
+                  <a v-if="project.websiteUrl" :href="project.websiteUrl" target="_blank" rel="noopener noreferrer">
+                    {{ project.name }}
+                    <ArrowUpRight data-icon="inline-end" />
+                  </a>
+                  <template v-else>{{ project.name }}</template>
+                </Button>
+              </ItemTitle>
               <ItemDescription>
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger as-child>
                       <Button asChild variant="ghost" size="sm" class="text-xs">
-                        <a :href="project.link" target="_blank" rel="noopener noreferrer">
+                        <a :href="project.repoUrl" target="_blank" rel="noopener noreferrer">
                           <CodeXml data-icon="inline-start" />
                         </a>
                       </Button>

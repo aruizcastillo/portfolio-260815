@@ -51,7 +51,7 @@
       "company": "Corporació de Salut del Maresme i la Selva",
       "role": "Desarrollador Frontend",
       "duration": "Jul 2026 - Presente",
-      "description": "Desarrollo y mantenimiento de aplicaciones web internas de ámbito administrativo y hospitalario, trabajando en UX/UI, integración de APIs, acceso a datos y soporte de aplicaciones.",
+      "description": "Desarrollo y mantenimiento de aplicaciones web internas de ámbito administrativo y hospitalario con Vue, Quasar, Go y SQL Server, desde UX/UI e integración de APIs hasta acceso a datos y soporte de aplicaciones.",
       "stack": ["Vue", "Quasar", "Go", "SQL Server"]
     }
   ],
@@ -60,21 +60,22 @@
       "institution": "Institut Sa Palomera",
       "degree": "Formación Profesional de Grado Superior en Desarrollo de Aplicaciones Web",
       "duration": "Sep 2024 - Jun 2026",
-      "stack": ["Java", "Typescript", "MySQL", "PHP"]
+      "stack": ["Java", "TypeScript", "MySQL", "PHP"]
     }
   ],
   "projects": [
     {
       "name": "MD-Juice",
       "description": "Un paquete CSS basado en tokens para personalizar renderizado Markdown, publicado en npm.",
-      "link": "https://github.com/aruizcastillo/md-juice",
+      "repoUrl": "https://github.com/aruizcastillo/md-juice",
       "stack": ["CSS", "Markdown", "npm"]
     },
     {
       "name": "Vue Firebase Starter",
       "description": "Un starter opinionado para Vue con autenticación, Firestore, routing, i18n y shadcn-vue.",
-      "link": "https://github.com/aruizcastillo/vue-firebase-starter",
-      "stack": ["Vue", "Firebase", "Auth", "Firestore"]
+      "repoUrl": "https://github.com/aruizcastillo/vue-firebase-starter",
+      "websiteUrl": "https://vue-firebase-starter.vercel.app",
+      "stack": ["Vue", "TypeScript", "Firebase", "Firestore"]
     }
   ],
   "contact": { "emailCopied": "Correo copiado al portapapeles" },
