@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 import AppLogo from '@/components/AppLogo.vue'
 import ThemeDropdown from '@/components/app-header/ThemeDropdown.vue'
 import LangDropdown from '@/components/app-header/LangDropdown.vue'
-import PageContainer from '@/components/ui/page/PageContainer.vue';
+import PageContainer from '@/components/ui/page/PageContainer.vue'
 </script>
 
 <template>
