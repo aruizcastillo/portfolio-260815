@@ -11,7 +11,7 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 
 <template>
   <PageContainer size="wider">
-    <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.2fr_0.9fr_0.9fr] xl:auto-rows-2.5 2xl:pt-[2dvh] 2xl:pb-[16dvh]">
+    <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.2fr_0.9fr_0.9fr] xl:auto-rows-2.5 xl:pt-[2dvh] xl:pb-[16dvh]">
       <HeroSection class="xl:col-start-1 xl:row-start-1 xl:row-span-16" />
 
       <AboutSection class="xl:col-start-2 xl:row-start-1 xl:row-span-6" />
