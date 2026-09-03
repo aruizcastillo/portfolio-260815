@@ -16,7 +16,7 @@ import ContactSection from '@/components/sections/ContactSection.vue'
       <ContactSection />
     </div>
 
-    <div class="pb-0 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:[grid-template-areas:'experience_about'_'experience_projects'_'education_projects'] lg:grid-rows-[auto_1fr_auto] lg:items-stretch">
+    <div class="pb-6 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:[grid-template-areas:'experience_about'_'experience_projects'_'education_projects'] lg:grid-rows-[auto_1fr_auto] lg:items-stretch">
       <ExperienceSection class="order-2 lg:[grid-area:experience]" />
 
       <AboutSection class="order-1 lg:[grid-area:about]" />

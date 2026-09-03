@@ -51,7 +51,7 @@ const projects = computed(() => [...(tm('projects') as Projects[])].reverse())
                   <Tooltip>
                     <TooltipTrigger as-child>
                       <Button asChild variant="ghost" size="sm" class="text-xs">
-                        <a :href="project.repoUrl" target="_blank" rel="noopener noreferrer">
+                        <a :href="project.repoUrl" target="_blank" rel="noopener noreferrer" :aria-label="$t('buttons.viewRepository')">
                           <CodeXml data-icon="inline-start" />
                         </a>
                       </Button>
