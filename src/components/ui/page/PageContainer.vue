@@ -12,7 +12,7 @@ const sizeClasses: Record<PageSize, string> = {
   xl: 'max-w-7xl',
   narrow: 'max-w-xl',
   default: 'max-w-5xl',
-  wide: 'max-w-8xl',
+  wide: 'max-w-7xl',
   wider: 'max-w-screen-2xl',
   full: 'max-w-none',
 }

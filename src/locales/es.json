@@ -30,7 +30,7 @@
   },
   "home": {
     "description": "Diseño y desarrollo aplicaciones web modernas y escalables.",
-    "about": "Desarrollador web con experiencia profesional en proyectos ágiles, enfocado en crear software útil, intuitivo y mantenible.",
+    "about": "Desarrollador web con experiencia profesional en proyectos ágiles de la administración pública y el ámbito hospitalario, enfocado en crear software útil, intuitivo y mantenible.",
     "sections": {
       "about": "Sobre mí",
       "experience": "Experiencia",
@@ -44,15 +44,15 @@
       "company": "DXC Technology",
       "role": "Desarrollador Full-Stack",
       "duration": "Oct 2025 - Jun 2026",
-      "description": "Desarrollo y mantenimiento de sistemas web para la gestión de contratación pública, implementando flujos de licitación como parte de un equipo amplio en entornos ágiles.",
+      "description": "Desarrollo y mantenimiento de sistemas web para la gestión de contratación pública, implementando procesos de licitación, integraciones y flujos de formularios como parte de un equipo ágil de 10 desarrolladores.",
       "stack": ["Angular", "Spring", "PostgreSQL"]
     },
     {
       "company": "Corporació de Salut del Maresme i la Selva",
       "role": "Desarrollador Frontend",
       "duration": "Jul 2026 - Presente",
-      "description": "Desarrollo y mantenimiento de aplicaciones web internas de ámbito administrativo y hospitalario con Vue, Quasar, Go y SQL Server, desde UX/UI e integración de APIs hasta acceso a datos y soporte de aplicaciones.",
-      "stack": ["Vue", "Quasar", "Go", "SQL Server"]
+      "description": "Desarrollo y mantenimiento de aplicaciones web internas de ámbito administrativo y hospitalario, desde UX/UI e integración de APIs hasta acceso a datos y soporte de aplicaciones.",
+      "stack": ["Vue", "Quasar", "Node.js", "Go", "SQL Server"]
     }
   ],
   "education": [

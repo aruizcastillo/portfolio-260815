@@ -27,23 +27,23 @@ async function copyEmail() {
 </script>
 
 <template>
-  <Card class="ghost flex flex-col justify-end">
+  <Card class="ghost flex justify-center">
     <CardContent>
-      <div class="flex flex-col gap-1 items-start">
-        <Button asChild variant="link" class="text-muted-foreground">
+      <div class="flex flex-row flex-wrap items-start gap-6 lg:flex-col lg:gap-1">
+        <Button asChild variant="link" class="text-muted-foreground px-0! lg:px-2!">
           <a :href="info.linkedin.url" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon class="w-5 h-5" />
             {{ info.linkedin.username }}
           </a>
         </Button>
-        <Button asChild variant="link" class="text-muted-foreground">
+        <Button asChild variant="link" class="text-muted-foreground px-0! lg:px-2!">
           <a :href="info.github.url" target="_blank" rel="noopener noreferrer">
             <GitHubIcon class="w-5 h-5" />
             {{ info.github.username }}
           </a>
         </Button>
         <div class="flex flex-row items-center">
-          <Button asChild variant="link" class="text-muted-foreground">
+          <Button asChild variant="link" class="text-muted-foreground px-0! lg:px-2!">
             <a :href="`mailto:${info.email}`" target="_blank" rel="noopener noreferrer">
               <Mail data-icon="inline-start" />
               {{ info.email }}

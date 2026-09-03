@@ -1,10 +1,4 @@
 @layer base {
-  @media (min-width: 1920px) {
-    body {
-      zoom: calc(100vw / 1920px);
-    }
-  }
-
   html {
     @apply scrollbar-gutter-stable;
   }

@@ -1,28 +1,29 @@
 <script setup lang="ts">
 import { PageContainer } from '@/components/ui/page'
 
-import ContactSection from '@/components/sections/ContactSection.vue'
 import EducationSection from '@/components/sections/EducationSection.vue'
 import ExperienceSection from '@/components/sections/ExperienceSection.vue'
 import HeroSection from '@/components/sections/HeroSection.vue'
 import ProjectsSection from '@/components/sections/ProjectsSection.vue'
 import AboutSection from '@/components/sections/AboutSection.vue'
+import ContactSection from '@/components/sections/ContactSection.vue'
 </script>
 
 <template>
-  <PageContainer size="wider">
-    <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.2fr_0.9fr_0.9fr] xl:auto-rows-2.5">
-      <HeroSection class="xl:col-start-1 xl:row-start-1 xl:row-span-16" />
+  <PageContainer size="wide" gap="sm">
+    <div class="pb-2 lg:pb-8 grid grid-cols-1 lg:grid-cols-2">
+      <HeroSection />
+      <ContactSection />
+    </div>
 
-      <AboutSection class="xl:col-start-2 xl:row-start-1 xl:row-span-6" />
+    <div class="pb-0 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:[grid-template-areas:'experience_about'_'experience_projects'_'education_projects'] lg:grid-rows-[auto_1fr_auto] lg:items-stretch">
+      <ExperienceSection class="order-2 lg:[grid-area:experience]" />
 
-      <ExperienceSection class="xl:col-start-2 xl:row-start-7 xl:row-span-18" />
+      <AboutSection class="order-1 lg:[grid-area:about]" />
 
-      <EducationSection class="xl:col-start-3 xl:row-start-17 xl:row-span-8" />
+      <EducationSection class="order-3 lg:[grid-area:education]" />
 
-      <ProjectsSection class="xl:col-start-3 xl:row-start-1 xl:row-span-16" />
-
-      <ContactSection class="xl:col-start-1 xl:row-start-17 xl:row-span-8" />
+      <ProjectsSection class="order-4 lg:[grid-area:projects]" />
     </div>
   </PageContainer>
 </template>

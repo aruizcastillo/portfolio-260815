@@ -30,7 +30,7 @@
   },
   "home": {
     "description": "I design and build modern web applications that scale.",
-    "about": "Web developer with professional experience in agile projects, focused on building useful, intuitive, and maintainable software.",
+    "about": "Web developer with professional experience working on agile projects across public administration and healthcare, focused on building useful, intuitive, and maintainable software.",
     "sections": {
       "about": "About me",
       "experience": "Experience",
@@ -45,15 +45,15 @@
       "company": "DXC Technology",
       "role": "Full-Stack Developer",
       "duration": "Oct 2025 - Jun 2026",
-      "description": "Development and maintenance of web systems for public procurement, implementing tendering workflows, service integrations and business-heavy forms as part of a large agile team.",
+      "description": "Development and maintenance of web systems for public procurement, implementing tendering processes, integrations with external services, and form-heavy workflows as part of an agile team of 10 developers.",
       "stack": ["Angular", "Spring", "PostgreSQL"]
     },
     {
       "company": "Corporació de Salut del Maresme i la Selva",
       "role": "Frontend Developer",
       "duration": "Jul 2026 - Present",
-      "description": "Development and maintenance of internal web applications for administrative and healthcare environments, from UX/UI and API integration to data access and application support.",
-      "stack": ["Vue", "Quasar", "Go", "SQL Server"]
+      "description": "Development and maintenance of internal web applications for administrative and healthcare environments, covering UX/UI, API integration, data access, and application support.",
+      "stack": ["Vue", "Quasar", "Node.js", "Go", "SQL Server"]
     }
   ],
   "education": [

@@ -8,7 +8,7 @@ import * as info from '@/data/info.json'
 </script>
 
 <template>
-  <Card class="ghost justify-center">
+  <Card class="ghost justify-center pb-2 lg:pb-8">
     <CardHeader>
       <CardTitle class="text-5xl">{{ $t('app.name') }}</CardTitle>
       <CardDescription class="text-lg">{{ $t('home.description') }}</CardDescription>

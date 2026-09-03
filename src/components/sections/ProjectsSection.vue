@@ -74,12 +74,14 @@ const projects = computed(() => [...(tm('projects') as Projects[])].reverse())
           </Item>
         </template>
       </ScrollArea>
-      <Button asChild variant="link" class="text-muted-foreground my-2">
-        <a :href="`${info.github.url}?tab=repositories`" target="_blank" rel="noopener noreferrer">
-          {{ $t('buttons.viewOnGithub') }}
-          <ArrowUpRight data-icon="inline-end" />
-        </a>
-      </Button>
+      <div class="flex w-full justify-end">
+        <Button asChild variant="link" class="text-muted-foreground">
+          <a :href="`${info.github.url}?tab=repositories`" target="_blank" rel="noopener noreferrer">
+            {{ $t('buttons.viewOnGithub') }}
+            <ArrowUpRight data-icon="inline-end" />
+          </a>
+        </Button>
+      </div>
     </CardContent>
   </Card>
 </template>
