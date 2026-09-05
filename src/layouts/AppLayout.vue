@@ -10,6 +10,6 @@ import { RouterView } from 'vue-router'
     <main>
       <RouterView />
     </main>
-    <AppFooter />
+    <AppFooter class="pt-0!" />
   </div>
 </template>

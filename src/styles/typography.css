@@ -1,0 +1,26 @@
+:root {
+  --font-weight-title: 600;
+  --tracking-title: -0.02em;
+}
+
+[data-style='soft'] {
+  --font-weight-title: 600;
+  --tracking-title: -0.02em;
+}
+
+[data-style='bold'] {
+  --font-weight-title: 750;
+  --tracking-title: -0.04em;
+}
+
+[data-style='sharp'] {
+  --font-weight-title: 600;
+  --tracking-title: -0.005em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-weight-title);
+  letter-spacing: var(--tracking-title);
+}

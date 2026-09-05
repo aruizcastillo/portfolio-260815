@@ -27,7 +27,7 @@ async function copyEmail() {
 </script>
 
 <template>
-  <Card class="ghost flex justify-center">
+  <Card class="ghost flex justify-center pt-4">
     <CardContent>
       <div class="flex flex-col items-start">
         <Button asChild variant="link" class="ps-0!">
