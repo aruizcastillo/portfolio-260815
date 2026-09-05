@@ -1,5 +1,10 @@
 {
   "app": { "name": "Alex Ruiz Castillo" },
+  "info": {
+    "name": "Alex Ruiz Castillo",
+    "role": "Desarrollador web",
+    "location": "Barcelona, España"
+  },
   "metadata": {
     "default": { "title": "Alex Ruiz Castillo", "description": "Portafolio personal de Alex Ruiz Castillo, destacando proyectos seleccionados, experiencia y trabajo." },
     "home": { "title": "Alex Ruiz Castillo", "description": "Portafolio personal de Alex Ruiz Castillo, destacando proyectos seleccionados, experiencia y trabajo." },
@@ -9,12 +14,18 @@
   "cvPath": "/assets/alex_ruiz_cv_es.pdf",
   "common": {
     "language": "Idioma",
-    "theme": "Tema"
+    "theme": "Tema",
+    "style": "Estilo"
   },
   "theme": {
     "system": "Sistema",
     "light": "Claro",
     "dark": "Oscuro"
+  },
+  "style": {
+    "soft": "Suave",
+    "bold": "Definido",
+    "sharp": "Afilado"
   },
   "navigation": {
     "main": "Navegación principal",

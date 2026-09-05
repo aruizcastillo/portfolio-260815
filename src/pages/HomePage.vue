@@ -6,17 +6,14 @@ import ExperienceSection from '@/components/sections/ExperienceSection.vue'
 import HeroSection from '@/components/sections/HeroSection.vue'
 import ProjectsSection from '@/components/sections/ProjectsSection.vue'
 import AboutSection from '@/components/sections/AboutSection.vue'
-import ContactSection from '@/components/sections/ContactSection.vue'
 </script>
 
 <template>
-  <PageContainer size="wide" gap="sm">
-    <div class="pb-2 lg:pb-8 grid grid-cols-1 lg:grid-cols-2">
-      <HeroSection />
-      <ContactSection />
-    </div>
+  <PageContainer size="wide" gap="none">
 
-    <div class="pb-6 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:[grid-template-areas:'experience_about'_'experience_projects'_'education_projects'] lg:grid-rows-[auto_1fr_auto] lg:items-stretch">
+    <HeroSection class="pb-[clamp(3rem,calc(16.667vw-3.667rem),7rem)]" />
+
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:[grid-template-areas:'experience_about'_'experience_projects'_'education_projects'] lg:grid-rows-[auto_1fr_auto] lg:items-stretch">
       <ExperienceSection class="order-2 lg:[grid-area:experience]" />
 
       <AboutSection class="order-1 lg:[grid-area:about]" />
@@ -25,5 +22,6 @@ import ContactSection from '@/components/sections/ContactSection.vue'
 
       <ProjectsSection class="order-4 lg:[grid-area:projects]" />
     </div>
+
   </PageContainer>
 </template>

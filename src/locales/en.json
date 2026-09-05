@@ -1,5 +1,10 @@
 {
   "app": { "name": "Alex Ruiz Castillo" },
+  "info": {
+    "name": "Alex Ruiz Castillo",
+    "role": "Web Developer",
+    "location": "Barcelona, Spain"
+  },
   "metadata": {
     "default": { "title": "Alex Ruiz Castillo", "description": "Personal portfolio of Alex Ruiz Castillo, featuring selected projects, experience and work." },
     "home": { "title": "Alex Ruiz Castillo", "description": "Personal portfolio of Alex Ruiz Castillo, featuring selected projects, experience and work." },
@@ -9,12 +14,18 @@
   "cvPath": "/assets/alex_ruiz_cv_en.pdf",
   "common": {
     "language": "Language",
-    "theme": "Theme"
+    "theme": "Theme",
+    "style": "Style"
   },
   "theme": {
     "system": "System",
     "light": "Light",
     "dark": "Dark"
+  },
+  "style": {
+    "soft": "Soft",
+    "bold": "Bold",
+    "sharp": "Sharp"
   },
   "navigation": {
     "main": "Main navigation",

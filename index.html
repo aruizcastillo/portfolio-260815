@@ -20,22 +20,27 @@
         let storedTheme = null
         // Setting the document language early for accessibility and browser semantics.
         let storedLocale = null
+        // Setting the style early to avoid a flash or incorrect style on page load.
+        let storedStyle = null
 
         try {
           storedTheme = localStorage.getItem('theme')
           storedLocale = localStorage.getItem('locale')
+          storedStyle = localStorage.getItem('style')
         } catch {
           // Storage can be unavailable in private browsing contexts.
         }
 
-        // Add new themes or locales here if you add them to the app.
+        // Add new themes, styles, or locales here if you add them to the app.
         const theme = ['system', 'light', 'dark'].includes(storedTheme) ? storedTheme : 'system'
+        const style = ['soft', 'sharp'].includes(storedStyle) ? storedStyle : 'soft'
         const systemTheme = typeof matchMedia === 'function' && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
         const resolvedTheme = theme === 'system' ? systemTheme : theme
         const browserLocale = navigator.language.split('-')[0]
         const locale = ['en', 'es'].includes(storedLocale) ? storedLocale : ['en', 'es'].includes(browserLocale) ? browserLocale : 'en'
 
         document.documentElement.dataset.theme = resolvedTheme
+        document.documentElement.dataset.style = style
         document.documentElement.style.colorScheme = resolvedTheme
         document.documentElement.lang = locale
       })()

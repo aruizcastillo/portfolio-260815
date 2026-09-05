@@ -29,21 +29,21 @@ async function copyEmail() {
 <template>
   <Card class="ghost flex justify-center">
     <CardContent>
-      <div class="flex flex-row flex-wrap items-start gap-6 lg:flex-col lg:gap-1">
-        <Button asChild variant="link" class="text-muted-foreground px-0! lg:px-2!">
+      <div class="flex flex-col items-start">
+        <Button asChild variant="link" class="ps-0!">
           <a :href="info.linkedin.url" target="_blank" rel="noopener noreferrer">
-            <LinkedInIcon class="w-5 h-5" />
+            <LinkedInIcon data-icon="inline-start" />
             {{ info.linkedin.username }}
           </a>
         </Button>
-        <Button asChild variant="link" class="text-muted-foreground px-0! lg:px-2!">
+        <Button asChild variant="link" class="ps-0!">
           <a :href="info.github.url" target="_blank" rel="noopener noreferrer">
-            <GitHubIcon class="w-5 h-5" />
+            <GitHubIcon data-icon="inline-start" />
             {{ info.github.username }}
           </a>
         </Button>
         <div class="flex flex-row items-center">
-          <Button asChild variant="link" class="text-muted-foreground px-0! lg:px-2!">
+          <Button asChild variant="link" class="ps-0!">
             <a :href="`mailto:${info.email}`" target="_blank" rel="noopener noreferrer">
               <Mail data-icon="inline-start" />
               {{ info.email }}
@@ -52,7 +52,7 @@ async function copyEmail() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger as-child>
-                <Button variant="ghost" size="sm" class="text-muted-foreground" :aria-label="t('buttons.copyEmail')" @click="copyEmail">
+                <Button variant="ghost" size="sm" :aria-label="t('buttons.copyEmail')" @click="copyEmail">
                   <Transition mode="out-in" enter-active-class="transition duration-100 ease-out" enter-from-class="scale-75 opacity-0" enter-to-class="scale-100 opacity-100" leave-active-class="transition duration-100 ease-in" leave-from-class="scale-100 opacity-100" leave-to-class="scale-75 opacity-0">
                     <Check v-if="emailCopied" data-icon="inline-start" />
                     <Copy v-else data-icon="inline-start" />
