@@ -6,8 +6,8 @@
     "location": "Barcelona, Spain"
   },
   "metadata": {
-    "default": { "title": "Alex Ruiz Castillo", "description": "Personal portfolio of Alex Ruiz Castillo, featuring selected projects, experience and work." },
-    "home": { "title": "Alex Ruiz Castillo", "description": "Personal portfolio of Alex Ruiz Castillo, featuring selected projects, experience and work." },
+    "default": { "title": "Alex Ruiz Castillo", "description": "Portfolio of Alex Ruiz Castillo, featuring selected projects and professional experience." },
+    "home": { "title": "Alex Ruiz Castillo", "description": "Portfolio of Alex Ruiz Castillo, featuring selected projects and professional experience." },
     "notFound": { "title": "Page not found · Alex Ruiz Castillo", "description": "The page you requested could not be found." }
   },
   "languages": { "en": "English", "es": "Spanish" },
