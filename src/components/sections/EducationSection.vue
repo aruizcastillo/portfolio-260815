@@ -9,13 +9,14 @@ import { Separator } from '@/components/ui/separator'
 
 interface Education {
   institution: string
-  degree: string
+  degree?: string
   duration: string
+  description: string
   stack?: string[]
 }
 
 const { tm } = useI18n()
-const experiences = computed(() => [...(tm('education') as Education[])].reverse())
+const educations = computed(() => [...(tm('education') as Education[])].reverse())
 </script>
 
 <template>
@@ -26,19 +27,22 @@ const experiences = computed(() => [...(tm('education') as Education[])].reverse
 
     <CardContent class="min-h-0 flex-1">
       <ScrollArea class="h-full **:data-[slot=scroll-area-viewport]:scroll-fade pr-2">
-        <template v-for="(experience, index) in experiences" :key="experience.institution">
+        <template v-for="(education, index) in educations" :key="education.institution">
           <Separator v-if="index > 0" class="my-4" />
           <Item size="sm" class="p-0">
             <ItemHeader class="flex flex-col items-start">
-              <ItemTitle>{{ experience.institution }}</ItemTitle>
+              <ItemTitle>{{ education.institution }}</ItemTitle>
               <div class="flex flex-row justify-between w-full gap-2">
+                <!-- <ItemDescription class="text-xs">
+                  {{ education.degree }}
+                </ItemDescription> -->
                 <ItemDescription class="text-xs">
-                  {{ experience.duration }}
+                  {{ education.duration }}
                 </ItemDescription>
               </div>
             </ItemHeader>
             <ItemContent class="text-sm">
-              <p>{{ experience.degree }}</p>
+              <p>{{ education.description }}</p>
             </ItemContent>
           </Item>
         </template>

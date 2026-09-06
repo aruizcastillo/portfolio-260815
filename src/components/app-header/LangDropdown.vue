@@ -15,11 +15,7 @@ const { locale, t } = useI18n()
 
 watch(locale, (value) => setLocale(value as SupportedLocale))
 
-const {
-  open,
-  enter,
-  leave,
-} = useHoverDropdown()
+const { open, enter, leave } = useHoverDropdown()
 </script>
 
 <template>

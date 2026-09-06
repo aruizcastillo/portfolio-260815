@@ -42,8 +42,8 @@ async function copyEmail() {
             {{ info.github.username }}
           </a>
         </Button>
-        <div class="flex flex-row items-center">
-          <Button asChild variant="link" class="ps-0!">
+        <div class="flex flex-row items-center gap-2">
+          <Button asChild variant="link" class="px-0!">
             <a :href="`mailto:${info.email}`" target="_blank" rel="noopener noreferrer">
               <Mail data-icon="inline-start" />
               {{ info.email }}

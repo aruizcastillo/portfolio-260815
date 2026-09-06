@@ -17,11 +17,7 @@ const { theme } = useTheme()
 const themeIcons = { system: Eclipse, light: Sun, dark: Moon } satisfies Record<Theme, typeof Eclipse>
 const themeIcon = computed(() => themeIcons[theme.value])
 
-const {
-  open,
-  enter,
-  leave,
-} = useHoverDropdown()
+const { open, enter, leave } = useHoverDropdown()
 </script>
 
 <template>

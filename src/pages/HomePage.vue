@@ -10,7 +10,6 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 
 <template>
   <PageContainer size="wide" gap="none">
-
     <HeroSection class="pb-[clamp(3rem,calc(16.667vw-3.667rem),7rem)]" />
 
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:[grid-template-areas:'experience_about'_'experience_projects'_'education_projects'] lg:grid-rows-[auto_1fr_auto] lg:items-stretch">
@@ -22,6 +21,5 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 
       <ProjectsSection class="order-4 lg:[grid-area:projects]" />
     </div>
-
   </PageContainer>
 </template>

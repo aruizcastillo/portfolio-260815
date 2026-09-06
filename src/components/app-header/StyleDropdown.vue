@@ -13,11 +13,7 @@ import { useHoverDropdown } from '@/composables/useHoverDropdown'
 const { locale, t } = useI18n()
 const { style } = useStyle()
 
-const {
-  open,
-  enter,
-  leave,
-} = useHoverDropdown()
+const { open, enter, leave } = useHoverDropdown()
 </script>
 
 <template>

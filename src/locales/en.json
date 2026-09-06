@@ -70,8 +70,9 @@
   "education": [
     {
       "institution": "Institut Sa Palomera",
-      "degree": "Higher Vocational Training in Web Application Development.",
+      "degree": "Web Application Development.",
       "duration": "Sep 2024 - Jun 2026",
+      "description": "Higher Vocational Training in Web Application Development.",
       "stack": ["Java", "TypeScript", "MySQL", "PHP"]
     }
   ],

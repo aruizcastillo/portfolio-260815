@@ -38,7 +38,7 @@ const projects = computed(() => [...(tm('projects') as Projects[])].reverse())
           <Item size="sm" class="p-0">
             <ItemHeader>
               <ItemTitle>
-                <Button asChild variant="link" class="flex items-center gap-2 px-0!">
+                <Button asChild variant="link" class="flex items-center gap-1 p-0!">
                   <a v-if="project.websiteUrl" :href="project.websiteUrl" target="_blank" rel="noopener noreferrer">
                     {{ project.name }}
                     <ArrowUpRight data-icon="inline-end" />

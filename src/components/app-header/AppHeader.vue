@@ -31,7 +31,7 @@ import * as info from '@/data/info.json'
                 <TooltipTrigger as-child>
                   <Button asChild variant="ghost">
                     <a :href="info.linkedin.url" target="_blank" rel="noopener noreferrer">
-                      <LinkedInIcon data-icon="inline-start"/>
+                      <LinkedInIcon data-icon="inline-start" />
                       <span class="sr-only">{{ info.linkedin.name }}</span>
                     </a>
                   </Button>
@@ -46,7 +46,7 @@ import * as info from '@/data/info.json'
                 <TooltipTrigger as-child>
                   <Button asChild variant="ghost">
                     <a :href="info.github.url" target="_blank" rel="noopener noreferrer">
-                      <GitHubIcon data-icon="inline-start"/>
+                      <GitHubIcon data-icon="inline-start" />
                       <span class="sr-only">{{ info.github.name }}</span>
                     </a>
                   </Button>

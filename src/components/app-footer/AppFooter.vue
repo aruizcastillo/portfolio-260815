@@ -5,7 +5,7 @@ import ContactSection from '@/components/sections/ContactSection.vue'
 import { PageContainer } from '@/components/ui/page'
 
 import { Copyright, MapPin } from '@lucide/vue'
-import Separator from '../ui/separator/Separator.vue';
+import Separator from '../ui/separator/Separator.vue'
 </script>
 
 <template>

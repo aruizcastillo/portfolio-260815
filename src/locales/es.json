@@ -69,8 +69,9 @@
   "education": [
     {
       "institution": "Institut Sa Palomera",
-      "degree": "Formación Profesional de Grado Superior en Desarrollo de Aplicaciones Web",
+      "degree": "Desarrollo de Aplicaciones Web",
       "duration": "Sep 2024 - Jun 2026",
+      "description": "Formación Profesional de Grado Superior en Desarrollo de Aplicaciones Web.",
       "stack": ["Java", "TypeScript", "MySQL", "PHP"]
     }
   ],
